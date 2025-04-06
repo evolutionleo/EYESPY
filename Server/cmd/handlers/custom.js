@@ -29,3 +29,7 @@ addHandler('next round ready', (c) => {
         c.lobby.nextRound();
     }
 });
+
+addHandler('online count', (c) => {
+    c.send({ cmd: 'online count', n: global.clients.length });
+});

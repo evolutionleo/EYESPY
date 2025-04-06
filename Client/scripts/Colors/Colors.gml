@@ -1,8 +1,10 @@
 // <3
 
-#macro C_BLUE merge_color(c_black, #00AEF0, .5)
+#macro C_BLUE_PURE #00AEF0
+#macro C_BLUE merge_color(c_black, C_BLUE_PURE, .5)
 //#macro C_RED merge_color(c_black, #FF0069, global.merge_amount)
-#macro C_RED merge_color(c_black, #FF0069, global.merge_amount)
+#macro C_RED_PURE #FF0069
+#macro C_RED merge_color(c_black, C_RED_PURE, global.merge_amount)
 
 function colorNameToColor(color_name) {
 	//return c_white;

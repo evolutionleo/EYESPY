@@ -1,5 +1,8 @@
 /// @desc 
 
+x = room_width/2
+y = room_height/2
+
 light = new BulbLight(oLightController.renderer, sRadialLight, 0, mouse_x, mouse_y)
 light2 = new BulbLight(oLightController.renderer2, sRadialLight, 0, mouse_x, mouse_y)
 

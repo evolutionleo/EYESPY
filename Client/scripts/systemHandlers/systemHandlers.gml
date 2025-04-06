@@ -12,6 +12,10 @@ addHandler("server info", function(data) {
 	}
 })
 
+addHandler("online count", function(data) {
+	global.online_count = data.n
+})
+
 addHandler("server kick", function(data) {
 	show_message("Kicked from the server! Reason: " + data.reason ?? "???")
 	game_end()

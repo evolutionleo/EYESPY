@@ -64,6 +64,7 @@ export default class Lobby extends EventEmitter {
         
         this.map = map;
         this.round = 0;
+        this.score = {red: 0, blue: 0};
 
         this.score = {
             red: 0,
@@ -97,6 +98,8 @@ export default class Lobby extends EventEmitter {
         room.level.shuffleStartPos();
 
         room.entities.ofType('Torch').forEach(t => t.color = 'none');
+
+        this.broadcast({cmd: 'score', score: this.score});
         
         this.players.forEach(player => {
             player.room.movePlayer(player, room);
@@ -230,6 +233,8 @@ export default class Lobby extends EventEmitter {
         this.players.forEach((player) => {
             this.addIntoPlay(player);
         });
+
+        this.broadcast({cmd: 'score', score: this.score});
     }
     
     close(reason = 'lobby is closing!') {

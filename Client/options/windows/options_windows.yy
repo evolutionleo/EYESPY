@@ -5,6 +5,9 @@
     "Dev":{
       "option_windows_disable_sandbox":"false",
     },
+    "Prod":{
+      "option_windows_display_name":"EYESPY",
+    },
   },
   "name":"Windows",
   "option_windows_allow_fullscreen_switching":false,

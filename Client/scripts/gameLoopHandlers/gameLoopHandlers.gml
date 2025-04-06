@@ -54,6 +54,10 @@ addHandler("play", function(data) {
 	}
 })
 
+addHandler("score", function(data) {
+	global.score = data.score
+})
+
 
 // changing rooms
 addHandler("room transition", function(data) {
@@ -90,7 +94,8 @@ addHandler("room transition", function(data) {
 })
 
 addHandler("game over", function(data) {
-	show_message_async($"Game over! ({data.outcome}), reason: {data.reason}")
+	global.bottom_text = "player left"
+	//show_message_async($"Game over! ({data.outcome}), reason: {data.reason}")
 })
 
 addHandler("mmr change", function(data) {
@@ -99,5 +104,7 @@ addHandler("mmr change", function(data) {
 })
 
 addHandler("reconnect", function(data) {
+	if (data.round)
+		global.round = data.round
 	trace("reconnected!")
 })

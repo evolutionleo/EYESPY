@@ -1,3 +1,3 @@
 /// @desc 
 
-global.merge_amount += 0.1
+//global.merge_amount += 0.1

@@ -2,6 +2,16 @@
 
 
 if (dead) {
+	if (!wasdead) {
+		wasdead = true
+		if !oSound.mute
+			audio_play_sound_at(aDeath, x, y, 0, 300, 100, 1, false, 1)
+	}
+	defaultInputs()
+	
+	spd.x = 0
+	spd.y = 0
+	
 	fade_time--
 	
 	if (fade_time <= 0) {
@@ -24,6 +34,9 @@ if (!remote and light == light2) {
 
 
 if (!remote) {
+	
+	audio_listener_position(x, y, 0)
+	
 	with (inputs) {
 		kup = keyboard_check(ord("W")) || keyboard_check(vk_up)
 		kleft = keyboard_check(ord("A")) || keyboard_check(vk_left)

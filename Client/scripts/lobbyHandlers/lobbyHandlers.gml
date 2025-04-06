@@ -42,10 +42,10 @@ addHandler("lobby leave", function(data) {
 	
 	global.playing = false
 	
-	if (forced)
-		show_message_async("Kicked from the lobby! Reason: " + reason)
-	else
-		show_message_async("You left the lobby")
+	//if (forced)
+	//	show_message_async("Kicked from the lobby! Reason: " + reason)
+	//else
+	//	show_message_async("You left the lobby")
 	
 	sendLobbyRequestList()
 	

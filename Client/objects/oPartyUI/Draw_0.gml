@@ -1,10 +1,11 @@
 ///// @desc
 
-draw_set_font(-1)
+draw_set_font(fPing)
 draw_set_halign(fa_left)
 draw_set_valign(fa_middle)
 
-draw_text(20, 50, $"Name: {global.username}")
+//Name: {global.username}\n
+draw_text(20, 25, $"online: {global.online_count}")
 
 //var _y = room_height/2-100
 //draw_text(20, _y, "Party:")

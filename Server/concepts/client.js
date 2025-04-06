@@ -239,7 +239,7 @@ export default class Client extends SendStuff {
     }
     
     onReconnect() {
-        this.send({ cmd: 'reconnect' });
+        this.send({ cmd: 'reconnect', round: this.lobby?.round });
         
         if (this.lobby)
             this.sendLobbyJoin(this.lobby);

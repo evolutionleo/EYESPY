@@ -2,7 +2,7 @@
 
 color = choose("red", "blue")
 
-dir = 135
+dir = choose(45, 135, 225, 315)
 
 light1 = new BulbLight(oLightController.renderer, sEyeLight, 0, x, y)
 light2 = new BulbLight(oLightController.renderer2, sEyeLight, 0, x, y)

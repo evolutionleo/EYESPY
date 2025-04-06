@@ -167,7 +167,7 @@ const common_config = {
     necessary_login: false, // if true, won't allow a client to join any lobby before logging in
     
     ping_interval: 5 * 1000,
-    reconnect_timeout: 15 * 1000 // keep a "dead" client in all the lobbies after socket disconnecting, waiting to reconnect with the same account
+    reconnect_timeout: 0 * 1000 // keep a "dead" client in all the lobbies after socket disconnecting, waiting to reconnect with the same account
 };
 
 const prod_config = {

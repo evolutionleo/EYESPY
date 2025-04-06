@@ -72,8 +72,8 @@ export default class PlayerEntity extends PhysicsEntity {
     shootsp = 50;
     dir = 0;
     
-    max_hp = 3;
-    hp = 3;
+    max_hp = 4;
+    hp = 4;
 
     iframes = 0;
     max_iframes = 4;
@@ -137,7 +137,7 @@ export default class PlayerEntity extends PhysicsEntity {
         this.hp = Math.max(this.hp, 0);
         this.hp = Math.min(this.hp, this.max_hp);
 
-        if (this.hp <= 0) {
+        if (this.hp <= 0 && !this.dead) {
             this.die();
         }
     }
@@ -153,6 +153,7 @@ export default class PlayerEntity extends PhysicsEntity {
 
     die() {
         this.dead = true;
+        this.client.lobby.score[this.color == 'red' ? 'blue' : 'red']++;
         // super.die();
         // placeholder
         // console.log('died lol');

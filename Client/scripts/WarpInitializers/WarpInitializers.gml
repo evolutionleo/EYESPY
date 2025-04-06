@@ -2,6 +2,8 @@
 global.username = ""
 global.playing = false
 
+global.online_count = 0
+
 global.player_uuid = undefined
 
 global.lobbies = []		 // list of all lobbies
@@ -15,8 +17,10 @@ global.game_map = undefined
 global.party_invites = []
 
 
-global.round = 0
+global.bottom_text = ""
 
+global.round = 0
+global.score = {blue: 0, red: 0}
 
 global.login_result = ""
 

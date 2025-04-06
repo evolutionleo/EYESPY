@@ -2,7 +2,7 @@
 
 draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
-draw_set_font(fTitle)
+draw_set_font(fFindingMatch)
 draw_text(room_width/2, room_height/2+50, "Looking for match" + string_repeat(".", dots))
 
 draw_set_font(-1)

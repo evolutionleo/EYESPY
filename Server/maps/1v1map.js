@@ -1,8 +1,7 @@
 import { levelFind } from "#concepts/level";
 import GameMap from "#concepts/map";
 
-let level = levelFind('First');
-let levels = [level, level, level];
+let levels = [levelFind('First'), levelFind('Second'), levelFind('Third'), levelFind('Four')];
 
 // shuffle randomly
 levels.sort((a, b) => Math.random() > 0.5 ? 1 : -1);
