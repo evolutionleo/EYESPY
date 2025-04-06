@@ -1,0 +1,47 @@
+{
+    "name": "warp-server",
+    "version": "7.0.0",
+    "private": true,
+    "description": "",
+    "main": "server.js",
+    "author": {
+        "name": "Evoleo"
+    },
+    "type": "module",
+    "scripts": {
+        "debug": "node --inspect . --env=dev",
+        "dev": "node . --env=dev",
+        "development": "node . --env=dev",
+        "prod": "node . --env=prod",
+        "production": "node . --env=prod",
+        "profile": "node --prof --env=dev",
+        "postprofile": "node --profile"
+    },
+    "dependencies": {
+        "@msgpack/msgpack": "^2.8.0",
+        "chalk": "^5.2.0",
+        "detect-collisions": "7.0.5",
+        "fastest-validator": "^1.16.0",
+        "minimist": "^1.2.8",
+        "mongoose": "^8.9.5",
+        "semver": "^7.5.2",
+        "ws": "^8.17.1"
+    },
+    "devDependencies": {
+        "@types/node": "^18.15.11",
+        "@types/semver": "^7.3.13",
+        "@types/ws": "^8.5.4",
+        "typescript": "^5.0.3"
+    },
+    "imports": {
+        "#root/*": "./*.js",
+        "#cmd/*": "./cmd/*.js",
+        "#*": "./*.js",
+        "#schemas/*": "./schemas/*.js",
+        "#concepts/*": "./concepts/*.js",
+        "#entities/*": "./entities/*.js",
+        "#initializers/*": "./initializers/*.js",
+        "#util/*": "./util/*.js",
+        "#matchmaking/*": "./concepts/matchmaking/*.js"
+    }
+}

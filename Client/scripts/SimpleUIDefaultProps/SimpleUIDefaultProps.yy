@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"SimpleUIDefaultProps",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SimpleUIDefaultProps",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Game/SimpleUI/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

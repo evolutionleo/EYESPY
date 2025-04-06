@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"authSenders",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"authSenders",
+  "parent":{
+    "name":"senders",
+    "path":"folders/Warp/Scripts/cmd/senders.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

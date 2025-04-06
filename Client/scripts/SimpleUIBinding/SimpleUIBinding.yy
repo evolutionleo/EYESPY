@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"SimpleUIBinding",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SimpleUIBinding",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Game/SimpleUI/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

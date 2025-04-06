@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__WarpConfig",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__WarpConfig",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Warp/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
